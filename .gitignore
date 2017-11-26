@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Additional Directories
+.vscode/
+test-bin/
+build/
+
+# Additional Files
+merged-main.cc
