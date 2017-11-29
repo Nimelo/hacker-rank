@@ -109,4 +109,20 @@ BOOST_AUTO_TEST_CASE(TestSet_6)
     BOOST_CHECK_EQUAL(expected_result, actual_result);
 }
 
+BOOST_AUTO_TEST_CASE(TestSet_7)
+{
+    // Arrange
+    vector<int> set = { 1, 7, 13, 19, 25 };
+    int k = 6;
+
+    size_t expected_result = 5;
+    NonDivisibleSubset<int> nds(set);
+    
+    // Act
+    auto actual_result = nds.get(k);
+
+    // Assert
+    BOOST_CHECK_EQUAL(expected_result, actual_result);
+}
+
 BOOST_AUTO_TEST_SUITE_END()
